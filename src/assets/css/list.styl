@@ -1,0 +1,31 @@
+.list{
+  margin 16px
+  .list_operations{
+    display flex
+    margin-bottom 8px
+    & > div {
+      margin-right 8px
+    }
+  }
+  .list_operations > button{
+    margin-right 8px
+  }
+}
+.list_title{
+  position relative
+  ul.ant-select-selection__rendered{
+    display: none
+  }
+  span.ant-select-selection{
+    cursor pointer
+  }
+  span.list_title_text{
+    position absolute
+    pointer-events none
+    left 8px
+    top 5px
+  }
+}
+.list_action_gap{
+  padding 0 8px
+}

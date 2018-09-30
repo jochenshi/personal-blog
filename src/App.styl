@@ -1,0 +1,53 @@
+@import "./assets/css/theme.styl"
+@import './assets/css/list.styl'
+@import './assets/css/form.styl'
+@import "~antd/dist/antd.css"
+
+body{
+	background-color bodyBackground
+}
+
+html, body, #root, .App{
+  width 100%
+  height 100%
+  padding 0
+  margin 0
+}
+ul,li{
+  list-style none
+}
+.App{
+  display flex
+}
+#root{
+  display flex
+}
+.header{
+	height 50px
+	line-height 30px
+	border-bottom 1px solid #dddddd
+	&>.link{
+		vertical-align middle
+		float right
+		font-size 16px
+	}
+	&>.title{
+		font-size 20px
+		vertical-align middle
+	}
+}
+.detail_list{
+	&>li{
+		line-height 40px
+		color rgba(0, 0, 0, 0.85)
+		&>label{
+			display inline-block
+			width 33%
+			text-align right
+			padding-right 8px
+			&>i{
+				font-style normal
+			}
+		}
+	}
+}
